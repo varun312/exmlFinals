@@ -4,8 +4,6 @@ import os
 import numpy as np
 import pandas as pd
 
-
-# temp = cv2.imread('C:/Varun/Codenges/ML/exun2021/finals/features/amongUsSettings.jpg') AMONG US TEMPLATE
 temps = ["amongUsSettings", "amongUsSettingsRed", "amongUsVictory", "apexLegendsLogo", "apexskull", "bars1", "bars2", "bars3", "bars4", "chest", "crafting", "fortniteBeta", "fortniteLogo", "fortnitePickaxe",
  "forzaGearFive", "forzaGearFour", "forzaGearOne", "forzaGearReverse", "forzaGearThree", "forzaGearTwo", "freeFireProfile", "freefireSettings", "furnace", "genshinUIDOPAQUE", "GOWBLUETREE", "GOWCROSS", "GOWLOGO",
   "GOWYELLOWTREE", "minecraftBigInventory", "shieldInventory", "squadsleft", "terrariamenu", "twohearts" ] 
@@ -16,8 +14,8 @@ ansArray = []
 # methods = [cv2.TM_CCOEFF, cv2.TM_CCOEFF_NORMED, cv2.TM_CCORR, cv2.TM_CCORR_NORMED, cv2.TM_SQDIFF]
 method = cv2.TM_CCOEFF_NORMED
 ans = 0
-for img in os.listdir("C:/Varun/Codenges/ML/exun2021/finals/Test_data"):
-    src = cv2.imread('C:/Varun/Codenges/ML/exun2021/finals/Test_data/'+img)
+for img in os.listdir("path/to/data"):
+    src = cv2.imread('path/to/data//'+img)
     src = cv2.cvtColor(src, cv2.COLOR_RGB2GRAY)
     for tempa in temps:
         temp = cv2.imread("C:/Varun/Codenges/ML/exun2021/finals/features/"+tempa+".jpg")
@@ -87,8 +85,8 @@ for img in os.listdir("C:/Varun/Codenges/ML/exun2021/finals/Test_data"):
             ans = "2"
     ansArray.append([str(img), ans])
     print(ans)
-    print("BURRAH\t\t\t\t", count)
+    print(count)
     count += 1
 
 ans = pd.DataFrame(ansArray, columns=['id', 'game_id'])
-ans.to_csv('CODE WORRIER.csv', index=False)
+ans.to_csv('answer.csv', index=False)
