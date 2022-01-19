@@ -18,7 +18,7 @@ for img in os.listdir("path/to/data"):
     src = cv2.imread('path/to/data//'+img)
     src = cv2.cvtColor(src, cv2.COLOR_RGB2GRAY)
     for tempa in temps:
-        temp = cv2.imread("C:/Varun/Codenges/ML/exun2021/finals/features/"+tempa+".jpg")
+        temp = cv2.imread("path/to/features/folder/"+tempa+".jpg")
         temp = cv2.cvtColor(temp, cv2.COLOR_RGB2GRAY)
         src2 = src.copy()
         result = cv2.matchTemplate(src2, temp, method)
