@@ -8,7 +8,8 @@ The dataset was obtained from recorded live streams from twitch. Various small s
     twitch-dl download -q 360p {VIDEO ID}
 
 Then 1000 random frames from the video were stored in a folder to be used as the data. ([frameExtractor.py](https://github.com/varun312/exmlFinals/blob/main/frameExtractor.py))
-([Link to dataset](https://drive.google.com/file/d/1eIhf9AVr6egiIEKWfV_nROn6ru96N3_2/view?usp=sharing))
+
+([Link to dataset]https://drive.google.com/file/d/1eIhf9AVr6egiIEKWfV_nROn6ru96N3_2/view?usp=sharing)
 
 ## Approach 
 
