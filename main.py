@@ -11,7 +11,7 @@ temps = ["amongUsSettings", "amongUsSettingsRed", "amongUsVictory", "apexLegends
   "GOWYELLOWTREE", "minecraftBigInventory", "shieldInventory", "squadsleft", "terrariamenu", "twohearts" ] 
 
 
-count = 0
+count = 2
 ansArray = []
 # methods = [cv2.TM_CCOEFF, cv2.TM_CCOEFF_NORMED, cv2.TM_CCORR, cv2.TM_CCORR_NORMED, cv2.TM_SQDIFF]
 method = cv2.TM_CCOEFF_NORMED
